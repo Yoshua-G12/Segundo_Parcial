@@ -1,0 +1,17 @@
+[
+  {
+    "idlector": "111111111",
+    "idlibro": "123456789",
+    "fechaPrestamo": "2025-04-11T00:00:00"
+  },
+  {
+    "idlector": "777777777",
+    "idlibro": "654321789",
+    "fechaPrestamo": "2025-04-26T00:00:00"
+  },
+  {
+    "idlector": "444444444",
+    "idlibro": "789123456",
+    "fechaPrestamo": "2025-04-01T00:00:00"
+  }
+]

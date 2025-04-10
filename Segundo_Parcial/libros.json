@@ -1,0 +1,33 @@
+[
+    {
+        "nombre": "Matematica2",
+        "id": "123456789",
+        "Autor": "Juan Perez"
+    },
+    {
+        "nombre": "Matematica3",
+        "id": "987654321",
+        "Autor": "Aureo Perez"
+    },
+    {
+        "nombre": "Matematica4",
+        "id": "456789123",
+        "Autor": "Juan tzic"
+    },
+    {
+        "nombre": "Matematica5",
+        "id": "321654987",
+        "Autor": "Lopez Perez"
+    },
+    {
+        "nombre": "Matematica6",
+        "id": "654321789",
+        "Autor": " Perez"
+    },
+    {
+        "nombre": "Matematica7",
+        "id": "789123456",
+        "Autor": "Pablo"
+        
+    }
+]

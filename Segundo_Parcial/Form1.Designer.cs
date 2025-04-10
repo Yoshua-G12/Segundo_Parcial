@@ -46,6 +46,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.labelfecha = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtlibrosprestados = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,6 +59,7 @@
             this.button1.TabIndex = 35;
             this.button1.Text = "Ordenar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btncerrar
             // 
@@ -66,6 +69,7 @@
             this.btncerrar.TabIndex = 34;
             this.btncerrar.Text = "Cerrar";
             this.btncerrar.UseVisualStyleBackColor = true;
+            this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
             // btnactualizar
             // 
@@ -75,6 +79,7 @@
             this.btnactualizar.TabIndex = 33;
             this.btnactualizar.Text = "Actualizar";
             this.btnactualizar.UseVisualStyleBackColor = true;
+            this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
             // 
             // dataGridView1
             // 
@@ -94,6 +99,7 @@
             this.btnguardar.TabIndex = 31;
             this.btnguardar.Text = "Guardar";
             this.btnguardar.UseVisualStyleBackColor = true;
+            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // cmbnombrelibro
             // 
@@ -102,6 +108,7 @@
             this.cmbnombrelibro.Name = "cmbnombrelibro";
             this.cmbnombrelibro.Size = new System.Drawing.Size(154, 24);
             this.cmbnombrelibro.TabIndex = 30;
+            this.cmbnombrelibro.SelectedIndexChanged += new System.EventHandler(this.cmbnombrelibro_SelectedIndexChanged);
             // 
             // cmbnombrelector
             // 
@@ -110,6 +117,7 @@
             this.cmbnombrelector.Name = "cmbnombrelector";
             this.cmbnombrelector.Size = new System.Drawing.Size(154, 24);
             this.cmbnombrelector.TabIndex = 29;
+            this.cmbnombrelector.SelectedIndexChanged += new System.EventHandler(this.cmbnombrelector_SelectedIndexChanged);
             // 
             // txtnombreautor
             // 
@@ -211,11 +219,30 @@
             this.labelfecha.TabIndex = 37;
             this.labelfecha.Text = "Ingrese La fecha:";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(719, 615);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(111, 16);
+            this.label4.TabIndex = 38;
+            this.label4.Text = "Libros prestados:";
+            // 
+            // txtlibrosprestados
+            // 
+            this.txtlibrosprestados.Location = new System.Drawing.Point(873, 608);
+            this.txtlibrosprestados.Name = "txtlibrosprestados";
+            this.txtlibrosprestados.ReadOnly = true;
+            this.txtlibrosprestados.Size = new System.Drawing.Size(122, 22);
+            this.txtlibrosprestados.TabIndex = 39;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1317, 659);
+            this.ClientSize = new System.Drawing.Size(1380, 693);
+            this.Controls.Add(this.txtlibrosprestados);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.labelfecha);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.button1);
@@ -236,6 +263,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -262,6 +290,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label labelfecha;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtlibrosprestados;
     }
 }
 
